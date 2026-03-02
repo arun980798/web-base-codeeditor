@@ -1,62 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <main>
-    <section id="left">
-      <div class="inputo" id="inp1">
-        <h2 id="html">html</h2>
-        <textarea name="" id="arop"></textarea>
-      </div>
-      <div class="inputo" id="inp2">
-        <h2 id="css">css</h2>
-        <textarea name="" id="arop"></textarea>
-      </div>
-      <div class="inputo" id="inp3">
-        <h2 id="js">javascript</h2>
-        <textarea name="" id="arop"></textarea>
-      </div>
-    </section>
-    <section id="right">
-      <label id="outop" for=""> output</label>
-      <iframe id="outou"></iframe>
-    </section>
-
-
-  </main>
-</body>
-<script>
-  console.log("hello")
-  let output = document.querySelector("#outou");
-  let allinput = document.querySelectorAll("#left #arop ")
-  let htmlcode, csscode, jscode = "";
-  allinput.forEach((el, index) => {
-    el.addEventListener("keyup", () => {
-      if (index == 0) {
-        htmlcode = el.value;
-      }
-      if (index == 1) {
-        csscode = el.value;
-      }
-      if (index == 1) {
-        jscode = el.value;
-      }
-      output.contentDocument.body.innerHTML = htmlcode;
-      output.contentDocument.head.innerHTML = `<style>${csscode}</style>`;
-      output.contentWindow.eval(jscode);
-
-
-
-    })
-  })
-</script>
-
-
+  <body>
+    <main>
+      <section id="left">
+        <div class="buttons">
+          <button id="btnhtml">html</button>
+          <button id="btncss">css</button>
+          <button id="btnjs">javascript</button>
+        </div>
+        <div class="inputo" id="inp1">
+          
+          <textarea name=""  id="htmlCode" id="arop"></textarea>
+        </div>
+        <div class="inputo"  id="inp2">
+         
+          <textarea name="" id="cssCode" id="arop"></textarea>
+        </div>
+        <div class="inputo" id="inp3">
+         
+          <textarea name="" id="jsCode" id="arop"></textarea>
+        </div>
+      </section>
+      <section id="right">
+        <label id="outop" for=""> output</label>
+        <iframe id="outou"></iframe>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>

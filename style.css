@@ -77,6 +77,8 @@
       color: var(--text-color);
       outline: none;
       padding: 2px;
+       flex: 1;    
+       height: 100%;
       border-radius: 8px;
 
 
@@ -123,6 +125,51 @@
 
     iframe {
       flex: 1;
-      background: var(--border-color);
+     
 
     }
+
+
+    .buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #1e1e1e;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #3c3c3c;
+  transform: translateY(-2px);
+}
+
+.buttons button:active {
+  transform: scale(0.96);
+}
+
+.buttons button.active {
+  background-color: #007acc;
+  color: white;
+}
+
+
+#inp1, #inp2, #inp3 {
+  display: none;
+}
+
+
+
