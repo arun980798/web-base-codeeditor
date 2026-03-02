@@ -30,4 +30,4 @@ Open index.html in your browser.
 Start coding!
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! 
